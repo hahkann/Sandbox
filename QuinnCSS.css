@@ -2031,6 +2031,10 @@ form input[type*="submit"] {
 
 /* used for iPad Pro; smaller resolution for testing*/
 @media ( min-width : 1500px) {
+	html {
+		overflow: hidden;
+	}
+	
 	.toHide {
 	display: none;
 	}
