@@ -2034,23 +2034,25 @@ form input[type*="submit"] {
 	html {
 		overflow: hidden;
 	}
-	
 	.toHide {
-	display: none;
+		display: none;
 	}
-	
+
 	/*
 	.bg-graphic, .quinn, .pad-top-bot {
 	background-color: #ff4d00
 	}
 	*/
 	.quinn {
-	
-	}
 		
-	.child-font-reset {
-	display: flex;
 	}
-	
+	.child-font-reset {
+		display: initial;
+	}
+	.col-lg-6 {
+		width: 100%;
+	}
+	.col-lg-7 {
+		width: 100%;
+	}
 }
-	
