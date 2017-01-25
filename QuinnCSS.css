@@ -2030,7 +2030,7 @@ form input[type*="submit"] {
 }
 
 /* used for iPad Pro; smaller resolution for testing*/
-@media ( min-width : 1500px) {
+@media screen and (orientation:portrait){
 	html {
 		overflow: hidden;
 	}
