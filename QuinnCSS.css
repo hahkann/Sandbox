@@ -2030,7 +2030,7 @@ form input[type*="submit"] {
 }
 
 /* used for iPad Pro; smaller resolution for testing*/
-@media ( min-height : 700px)  {
+@media ( min-width : 1500px) {
 	html {
 		overflow: hidden;
 	}
@@ -2044,14 +2044,12 @@ form input[type*="submit"] {
 	background-color: #ff4d00
 	}
 	*/
-	
 	.quinn {
 	
 	}
 		
 	.child-font-reset {
-	display: initial;
-	clear: both;
+	display: flex;
 	}
 	
 }
