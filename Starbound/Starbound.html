@@ -1,0 +1,370 @@
+<html>
+	<head>
+	
+	</head>
+		<link rel="stylesheet" href="inc/bootstrap.css">
+		<script src="inc/jquery-3.2.1.min.js"></script>
+		
+		<style>
+		
+		::-moz-selection{
+			background-color:Transparent;
+			color:#000;
+		}
+
+		::selection {
+			background-color:Transparent;
+			color:#000;
+		}
+		
+		body {
+			background-color: grey;
+		}
+		
+		.food{
+			text-align: center;
+		}
+		
+		.white-border {
+			border:2px solid white;
+			
+		}
+		.food-img {
+			height: 48px;
+			width: 48px;
+		}
+		.selected {
+			border-color: green;
+		}
+		.unselected {
+			border-color: white;
+		}
+		
+		testtag{
+		
+		}
+		</style>
+
+		<script>
+		var arr = "a b c d 3 f";
+		$(document).ready(function () {
+		
+			// Does something when you click on the item
+ 			$( ".ingredient" ).click(function() {
+				if ($(this).hasClass("selected")){
+					$(this)
+						.removeClass("selected")
+						.addClass("unselected");
+					console.log( $(this).attr("id") +" unselected");
+				} else {
+					$(this)
+						.removeClass("unselected")
+						.addClass("selected");
+					console.log( $(this).attr("id") +" selected");
+				}
+					
+					
+				/*if ($("#corn").hasClass("selected") && $("#banana").hasClass("#egg")) {
+					$("#apexfritter")
+						.removeClass("unselected")
+						.addClass("selected");
+				} else {
+					$("#apexfritter")
+						.removeClass("selected")
+						.addClass("unselected");
+				}
+				if ($("#automato").hasClass("selected") && $("#currentcorn").hasClass("selected")) {
+					$("#2kbpotage")
+						.removeClass("unselected")
+						.addClass("selected");
+				} else {
+					$("#2kbpotage")
+						.removeClass("selected")
+						.addClass("unselected");
+				}
+				if ($("#automato").hasClass("selected") && $("#currentcorn").hasClass("selected") && $("#wheat").hasClass("selected")) {
+					$("#automatostew")
+						.removeClass("unselected")
+						.addClass("selected");
+				} else {
+					$("#automatostew")
+						.removeClass("selected")
+						.addClass("unselected");
+				}*/
+			});
+			
+			// Loads images for each food item
+			var item = $(".food");
+			for (i = 0; i < item.length; i++){
+					$('<img/>')
+						.attr({
+							src: 'img/food/'+item[i].id+'.png',
+							class:'food-img'				
+						})
+						.appendTo(item[i]);
+					
+					//console.log("loaded image for "+item[i].id);
+				}
+			
+			//create 2d array for recipe and ingredients
+			var recipe = ["rec1","rec2 rec3"];
+			
+			//Check all food where the ingredient exists as the recipe
+				//on click
+					//check each recipe to see if ingredient is part of string
+					
+					//if it is
+						//check other ingredients to see if they are checked
+						//if they are all checked
+							//select the recipe
+						//else
+							//don't select recipe
+					//else
+						//move on to next recipe
+			
+			/*if ($("#automato").hasClass("selected") && $("#currentcorn").hasClass("selected")) {
+				console.log("hi");
+			} else {
+				console.log("bye");
+			}*/
+		});
+		
+		</script>
+	<body>
+	
+		<h1>Starbound Food</h1>
+		<div class="col-xs-4">
+			<h2>Select the food that you have</h2>
+			<h3>Edibles</h3>
+			<div class="col-xs-6">
+				<div id="automato" class="ingredient food white-border"><testtag>Automato</testtag></div>
+				<div id="avesmingo" class="ingredient food white-border">Avesmingo</div>
+				<div id="banana" class="ingredient food white-border">Banana</div>
+				<div id="beakseed" class="ingredient food white-border">Beakseed</div>
+				<div id="boltbulb" class="ingredient food white-border">Boltbulb</div>
+				<div id="boneboo" class="ingredient food white-border">Boneboo</div>
+				<div id="carrot" class="ingredient food white-border">Carrot</div>
+				<div id="chili" class="ingredient food white-border">Chili</div>
+				<div id="coffeebeans" class="ingredient food white-border">Coffee beans</div>
+				<div id="coralcreep" class="ingredient food white-border">Coralcreep</div>
+				<div id="corn" class="ingredient food white-border">Corn</div>
+				<div id="currentcorn" class="ingredient food white-border">Currentcorn</div>
+				<div id="diodia" class="ingredient food white-border">Diodia</div>
+				<div id="dirturchin" class="ingredient food white-border">Dirturchin</div>
+			</div>
+			<div class="col-xs-6">
+				<div id="eggshoot" class="ingredient food white-border">Eggshoot</div>
+				<div id="feathercrown" class="ingredient food white-border">Feathercrown</div>
+				<div id="grapes" class="ingredient food white-border">Grapes</div>
+				<div id="kiwi" class="ingredient food white-border">Kiwi</div>
+				<div id="neonmelon" class="ingredient food white-border">Neonmelon</div>
+				<div id="oculemon" class="ingredient food white-border">Oculemon</div>
+				<div id="pearlpea" class="ingredient food white-border">Pearlpea</div>
+				<div id="pineapple" class="ingredient food white-border">Pineapple</div>
+				<div id="potato" class="ingredient food white-border">Potato</div>
+				<div id="pussplum" class="ingredient food white-border">Pussplum</div>
+				<div id="reefpod" class="ingredient food white-border">Reefpod</div>
+				<div id="tomato" class="ingredient food white-border">Tomato</div>
+				<div id="toxictop" class="ingredient food white-border">Toxictop</div>
+				<div id="wartweed" class="ingredient food white-border">Wartweed</div>
+			</div>
+			<div class="col-xs-12">
+				<h3>Non-edibles</h3>
+				<div class="col-xs-6">
+					<div id="cacti" class="ingredient food white-border">Cactus</div>
+					<div id="cocoa" class="ingredient food white-border">Cocoa Pod</div>
+					<div id="kelp" class="ingredient food white-border">Kelp</div>
+				</div>
+				<div class="col-xs-6">
+					<div id="shroom" class="ingredient food white-border">Mushroom</div>
+					<div id="rice" class="ingredient food white-border">Rice</div>
+					<div id="sugar" class="ingredient food white-border">Sugar</div>
+					<div id="wheat" class="ingredient food white-border">Wheat</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<h3>Shop</h3>
+				<div class="col-xs-6">
+					<div id="cheese" class="ingredient food white-border">Cactus</div>
+					<div id="egg" class="ingredient food white-border">Cocoa Pod</div>
+					<div id="milk" class="ingredient food white-border">Kelp</div>
+				</div>
+				<h3>Others</h3>
+				<div class="col-xs-6">
+					<div id="alienfruit" class="ingredient food white-border">Alien Fruit</div>
+					<div id="redapple" class="ingredient food white-border">Red Apple</div>
+					<div id="thornfruit" class="ingredient food white-border">Thorn Fruit</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-xs-8">
+			<h2> The food you can make with the selected items</h2>
+			<!--Tier 1-->
+			<div class="col-xs-2">
+				<h3>Tier 1</h3>
+				<div id="bread" class="tier1 food white-border"></div>
+				<div id="corncob" class="tier1 food white-border"></div>
+				<div id="fishdumplings" class="tier1 food white-border"> </div>
+				<div id="fishfingers" class="tier1 food white-border"> </div>
+				<div id="fishnchips" class="tier1 food white-border"></div>
+				<div id="fishpie" class="tier1 food white-border"> </div>
+				<div id="fishstew" class="tier1 food white-border"></div>
+				<div id="mashedpotato" class="tier1 food white-border"> </div>
+				<div id="meatdumplings" class="tier1 food white-border"> </div>
+				<div id="meatstew" class="tier1 food white-border"> </div>
+				<div id="meatpie" class="tier1 food white-border"> </div>
+				<div id="pearlpeabroth" class="tier1 food white-border"> </div>
+				<div id="pearlpearisotto" class="tier1 food white-border"> </div>
+				<div id="toast" class="tier1 food white-border"></div>
+			</div>
+			<div class="col-xs-2">						
+				<h3>Tier 2</h3>
+				<div id="applecrumble" class="tier2 food white-border"> </div>
+				<div id="baconpancakes" class="tier2 food white-border"> </div>
+				<div id="beakseedbread" class="tier2 food white-border"> </div>
+				<div id="beakseedjam" class="tier2 food white-border"> </div>
+				<div id="beakseedtart" class="tier2 food white-border"> </div>
+				<div id="bonbonbonbons" class="tier2 food white-border"> </div>
+				<div id="bonbons" class="tier2 food white-border"> </div>
+				<div id="cactusjuice" class="tier2 food white-border"> </div>
+				<div id="cake" class="tier2 food white-border"> </div>
+				<div id="candiedcorn" class="tier2 food white-border"> </div>
+				<div id="candyapple" class="tier2 food white-border"> </div>
+				<div id="carrotbread" class="tier2 food white-border"> </div>
+				<div id="carrotcake" class="tier2 food white-border"> </div>
+				<div id="carrotjuice" class="tier2 food white-border"> </div>
+				<div id="carrotsoup" class="tier2 food white-border"> </div>
+				<div id="cheeseburger" class="tier2 food white-border"> </div>
+				<div id="chocolatecake" class="tier2 food white-border"> </div>
+				<div id="coffee" class="tier2 food white-border"> </div>
+				<div id="coffeecake" class="tier2 food white-border"> </div>
+				<div id="cornpeckers" class="tier2 food white-border"> </div>
+				<div id="feathercrownjam" class="tier2 food white-border"> </div>
+				<div id="featherfood" class="tier2 food white-border"> </div>
+				<div id="flatwhite" class="tier2 food white-border"> </div>
+				<div id="fluffyruffs" class="tier2 food white-border"> </div>
+				<div id="gardensalad" class="tier2 food white-border"> </div>
+				<div id="hamburger" class="tier2 food white-border"> </div>
+				<div id="kiwijam" class="tier2 food white-border"> </div>
+				<div id="kiwijuice" class="tier2 food white-border"> </div>
+				<div id="mocha" class="tier2 food white-border"> </div>
+				<div id="mushroombread" class="tier2 food white-border"> </div>
+				<div id="mushroomquiche" class="tier2 food white-border"> </div>
+				<div id="mushroomrice" class="tier2 food white-border"> </div>
+				<div id="omelette" class="tier2 food white-border"> </div>
+				<div id="pasty" class="tier2 food white-border"> </div>
+				<div id="pearlpeajam" class="tier2 food white-border"> </div>
+				<div id="pearlpeapancakes" class="tier2 food white-border"> </div>
+				<div id="pizza" class="tier2 food white-border"> </div>
+				<div id="pizzaslice" class="tier2 food white-border"> </div>
+				<div id="porridge" class="tier2 food white-border"> </div>
+				<div id="quichelorraine" class="tier2 food white-border"> </div>
+				<div id="relish" class="tier2 food white-border"> </div>
+				<div id="ricepudding" class="tier2 food white-border"> </div>
+				<div id="roastdinner" class="tier2 food white-border"> </div>
+				<div id="specialrice" class="tier2 food white-border"></div>
+				<div id="spikycookies" class="tier2 food white-border"></div>
+				<div id="stickyribs" class="tier2 food white-border"></div>
+				<div id="stuffedtomato" class="tier2 food white-border"></div>
+				<div id="sweetmeat" class="tier2 food white-border"></div>
+				<div id="sweetpopcorn" class="tier2 food white-border"></div>
+				<div id="tomatojuice" class="tier2 food white-border"></div>
+				<div id="tomatosoup" class="tier2 food white-border"></div>
+			</div>
+			<div class="col-xs-2">
+				<h3>Tier 3</h3>
+				<div id="2kbpotage" class="tier3 food white-border"></div>
+				<div id="apegrapes" class="tier3 food white-border"></div>
+				<div id="apexfritter" class="tier3 food white-border"></div>
+				<div id="automatoshake" class="tier3 food white-border"></div>
+				<div id="automatostew" class="tier3 food white-border"></div>
+				<div id="bananacon" class="tier3 food white-border"></div>
+				<div id="bananacreamdonut" class="tier3 food white-border"></div>
+				<div id="bananacreampie" class="tier3 food white-border"></div>
+				<div id="bananaicecream" class="tier3 food white-border"></div>
+				<div id="batteredbanana" class="tier3 food white-border"></div>
+				<div id="cactiicecream" class="tier3 food white-border"></div>
+				<div id="campfirebanana" class="tier3 food white-border"></div>
+				<div id="candyautomato" class="tier3 food white-border"></div>
+				<div id="choconut" class="tier3 food white-border"></div>
+				<div id="coconuticecream" class="tier3 food white-border"></div>
+				<div id="coconutmilk" class="tier3 food white-border"></div>
+				<div id="coconutrice" class="tier3 food white-border"></div>
+				<div id="fishinabone" class="tier3 food white-border"></div>
+				<div id="fruitsalad" class="tier3 food white-border"></div>
+				<div id="grapejuice" class="tier3 food white-border"></div>
+				<div id="luckydip" class="tier3 food white-border"></div>
+				<div id="pineapplejam" class="tier3 food white-border"></div>
+				<div id="pineapplejuice" class="tier3 food white-border"></div>
+				<div id="pineapplepizzaslice" class="tier3 food white-border"></div>
+				<div id="snowcone" class="tier3 food white-border"></div>
+				<div id="stuffedautomato" class="tier3 food white-border"></div>
+				<div id="sweetpunch" class="tier3 food white-border"></div>
+				<div id="thornjuice" class="tier3 food white-border"></div>
+				<div id="tropicalpunch" class="tier3 food white-border"></div>
+			</div>
+			<div class="col-xs-2">
+				<h3>Tier 4</h3>
+				<div id="alienfruitjam" class="tier4 food white-border"></div>
+				<div id="alienfruitjuice" class="tier4 food white-border"></div>
+				<div id="avesmingoicecream" class="tier4 food white-border"></div>
+				<div id="avesmingojuice" class="tier4 food white-border"></div>
+				<div id="bananasplit" class="tier4 food white-border"></div>
+				<div id="bloodypuss" class="tier4 food white-border"></div>
+				<div id="brineapple" class="tier4 food white-border"></div>
+				<div id="cyanider" class="tier4 food white-border"></div>
+				<div id="oceanrisotto" class="tier4 food white-border"></div>
+				<div id="oceansalsa" class="tier4 food white-border"></div>
+				<div id="oceansurprise" class="tier4 food white-border"></div>
+				<div id="oculemonmeringue" class="tier4 food white-border"></div>
+				<div id="oculemonstew" class="tier4 food white-border"></div>
+				<div id="pussplumjam" class="tier4 food white-border"></div>
+				<div id="pussplumpudding" class="tier4 food white-border"></div>
+				<div id="reefjuice" class="tier4 food white-border"></div>
+				<div id="reefpodsurprise" class="tier4 food white-border"></div>
+				<div id="reefshake" class="tier4 food white-border"></div>
+				<div id="ricecake" class="tier4 food white-border"></div>
+				<div id="saltsalad" class="tier4 food white-border"></div>
+				<div id="seafoodgratin" class="tier4 food white-border"></div>
+				<div id="soggysack" class="tier4 food white-border"></div>
+				<div id="stuffeddirturchin" class="tier4 food white-border"></div>
+				<div id="sushi" class="tier4 food white-border"></div>
+				<div id="toxicjamdonut" class="tier4 food white-border"></div>
+				<div id="toxicjuice" class="tier4 food white-border"></div>
+				<div id="toxictart" class="tier4 food white-border"></div>
+				<div id="toxictopjam" class="tier4 food white-border"></div>
+			</div>
+			<div class="col-xs-2">
+				<h3>Tier 5</h3>
+				<div id="8gbpizzap" class="tier5 food white-border"></div>
+				<div id="16GBpasty" class="tier5 food white-border"></div>
+				<div id="boltos" class="tier5 food white-border"></div>
+				<div id="eggshooticecream" class="tier5 food white-border"></div>
+				<div id="eggshootsalad" class="tier5 food white-border"></div>
+				<div id="eyebowls" class="tier5 food white-border"></div>
+				<div id="nutsandbolts" class="tier5 food white-border"></div>
+				<div id="piodia" class="tier5 food white-border"></div>
+				<div id="smash" class="tier5 food white-border"></div>
+			</div>
+			<div class="col-xs-2">
+				<h3>Tier 6</h3>
+				<div id="burningeyeballs" class="tier6 food white-border"></div>
+				<div id="coralcreepcurry" class="tier6 food white-border"></div>
+				<div id="hotbone" class="tier6 food white-border"></div>
+				<div id="hothothotpot" class="tier6 food white-border"></div>
+				<div id="neonmelonjam" class="tier6 food white-border"></div>
+				<div id="pearlpeaparcels" class="tier6 food white-border"></div>
+				<div id="pozest" class="tier6 food white-border"></div>
+				<div id="spicyfeathercrown" class="tier6 food white-border"></div>
+				<div id="spicyribs" class="tier6 food white-border"></div>
+				<div id="ultimatejuice" class="tier6 food white-border"></div>
+				<div id="volcanicsalsa" class="tier6 food white-border"></div>
+				<div id="wartweedjam" class="tier6 food white-border"></div>
+				<div id="wartweedjamdonut" class="tier6 food white-border"></div>
+				<div id="wartweedstew" class="tier6 food white-border"></div>
+			</div>
+
+		</div>
+	</body>
+</html>	

@@ -1,0 +1,150 @@
+apexfritter corn banana egg
+automatostew currentcorn automato wheat
+baconpancakes rawbacon wheat milk egg
+boltos boltbulb milk
+cheeseburger alienmeat tomato relish cheese bread
+coralcreepcurry coralcreep rice tomato chilli
+cornpeckers beakseed corn
+featherfood feathercrown beakseed wheat sugar
+fishdumplings potato bread rawfish
+fishfingers rawfish wheat
+fishinabone bread rawfish
+fishnchips boneboo rawfish
+fishpie mashedpotato rawfish
+fishstew rawfish wheat pearlpea corn
+hamburger relish bread alienmeat tomato
+hothothotpot chilli lava alienmeat avesmingo
+meatdumplings wheat alienmeat
+meatstew pearlpea corn alienmeat wheat 
+mushroomquiche mushroom egg cheese wheat
+oceanrisotto rice reefpod rawfish
+oceansurprise reefpod kelp coralcreep rawfish
+oculemonstew wheat pussplum oculemon alienmeat
+omelette cheese rawbacon mushroom egg
+pasty wheat potato carrot alienmeat
+pearlpeapancakes wheat pearlpeas milk egg
+pearlpearisotto rice pearlpea
+pineapplepizzaslice cheese rawbacon wheat pineapple
+piodia cheese diodia wheat automato
+pizzaslice tomato cheese rawbacon wheat
+8gbpizzap cheese wheat automato boltbulb
+porridge wheat milk
+quichelorraine rawbacon wheat egg cheese
+reefpodsurprise reefpod oculemon
+roastdinner rawpoultry pearlpea mashedpotato carrot
+16GBpasty alienmeat wheat boltbulb diodia
+seafoodgratin coralcreep rawfish
+meatpie mashedpotato meatstew
+spicyribs chilli rawribmeat sugar
+spookypie boneboo wheat
+stickyribs sugar rawribmeat
+sushi rice rawfish kelp
+wartweedstew wartweed wheat pearlpea tomato
+bananacon rawbacon banana
+beakseedbread wheat beakseed
+bread wheat
+burningeyeballs oculemon chilli
+carrotbread wheat carrot
+carrotsoup potato milk carrot
+cheese milk
+coconutrice rice coconutmilk
+corncob corn
+eggshootsalad feathercrownjam eggshoot
+eyebowls eggshoot oculemon
+fluffyruffs egg bread
+gardensalad tomato corn carrot
+hotbone  chilli boneboo
+mashedpotato potato
+mushroombread wheat mushroom
+mushroomrice rice mushroom egg
+pearlpeabroth wheat boiledpearlpeas
+pearlpeaparcels pearlpea wartweed
+ricecake rice kelp
+saltsalad reefpod pearlpea coralcreep
+soggysack dirturchin coralcreep
+specialrice egg corn rice pearlpea
+spicyfeathercrown chilli feathercrown
+stuffedautomato corn cheese bread automato
+stuffeddirturchin pearlpea dirturchin cheese bread
+stuffedtomato tomato corn cheese bread
+sweetmeat rawbacon sugar
+tomatosoup milk tomato potato
+2kbpotage currentcorn automato
+smash currentcorn diodia boltbulb
+apegrapes grapes banana
+applecrumble redapple wheat sugar
+avesmingoicecream milk snowball sugar avesmingo
+bananacreampie sugar milk banana wheat
+bananaicecream sugar snowball milk banana
+bananasplit banana chocolate pineapple avesmingoicecream
+batteredbanana banana wheat
+beakseedtart beakseedjam wheat
+bonbons sugar
+bonbonbonbons bonbons
+brineapple pineapple coralcreep
+cactiicecream cactus sugar snowball milk
+cake wheat sugar milk egg
+campfirebanana chocolate banana
+carrotcake egg carrot wheat sugar milk
+chocolatecake egg chocolate wheat sugar milk
+coconuticecream sugar snowball milk coconut
+coffeecake egg coffeebeans wheat sugar milk
+eggshooticecream eggshoot milk snowball sugar
+fruitsalad grapes banana pineapple kiwi
+oculemonmeringue sugar oculemon egg
+pussplumpudding sugar rice pussplum milk
+pussplumtart wheat pussplumjam
+ricepudding sugar rice milk
+snowcone sugar snowball
+toxictart wheat toxictopjam alienfruit
+bananacreamdonut egg banana wheat sugar milk
+candiedcorn corn sugar
+candyapple sugar redapple
+candyautomato sugar automato
+chocolate cocoa
+choconut chocolate sugar milk egg coconut
+luckydip carrot banana
+nutsandbolts boltbulb diodia
+spikycookies cactus wheat sugar milk egg
+spookydonut egg boneboo wheat sugar milk
+sweetpopcorn sugar popcorn
+toxicjamdonut sugar milk egg wheat toxictopjam
+wartweedjamdonut milk sugar wartweedjam wheat egg
+alienfruitjuice alienfruit
+automatoshake milk automato
+avesmingojuice avesmingo
+bloodypuss fleshstrand pussplum
+bottledwater water emptybottle
+cactusjuice cactus
+carrotjuice carrot
+coconutmilk coconut
+coffee cofeebeans
+cyanider pussplum oculemon
+flatwhite milk coffee
+grapejuice grapes
+kiwijuice kiwi
+mocha milk coffee chocolate
+pineapplejuice pineapple
+pozest currentcorn diodia neonmelon boltbulb
+reefjuice reefpod
+reefshake milk reefpod
+sweetpunch pineapple kiwi grapes
+thornjuice thornfruit
+tomatojuice tomato
+toxicjuice toxictop alienfruit
+tropicalpunch kiwi coconut banana
+ultimatejuice boneboo feathercrown oculemon neonmelon toxictop
+alienfruitjam alienfruit  sugar
+beakseedjam sugar beakseed
+desertsalsa cactus beakseed automato kiwi feathercrown currentcorn
+feathercrownjam feathercrown sugar
+kiwijam kiwi sugar
+neonmelonjam neonmelonjam sugar
+oceansalsa reefpod pineapple coralcreep banana
+pearlpeajam pearlpea sugar
+pineapplejam pineapple sugar
+pussplumjam pussplum sugar
+relish tomato sugar corn
+toxictopjam sugar toxictop
+volcanicsalsa chilli tomato avesmingo
+wartweedjam wartweed sugar
